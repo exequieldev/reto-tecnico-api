@@ -23,7 +23,7 @@ Se realizado la descarga de todo los datos necesarios para simular el entorno, d
 
 Se llevó a cabo la creación de una base de datos para realizar pruebas con el motor MYSQL.
 
-3. **Migración**    CreateZipCodesTable.php
+3. **Migración**: [CreateZipCodesTable.php](https://github.com/exequieldev/reto-tecnico-api/blob/main/database/migrations/2023_04_28_213820_create_zip_codes_table.php)
 
 Se crea un archivo de migración para crear la tabla zip\_codes, con sus respectivos campos en la base de datos.
 ```php
@@ -74,7 +74,7 @@ class CreateZipCodesTable extends Migration
 }
 ```
 
-4. **Modelos**  ZipCode.php
+4. **Modelos**: [ZipCode.php](https://github.com/exequieldev/reto-tecnico-api/blob/main/app/Models/ZipCode.php)
 
 Se crea un modelo llamado ZipCode para la creación de los registros en la base de datos.
 ```php
@@ -95,14 +95,12 @@ class ZipCode extends Model
 
 ```
 
-5. **Seeder**   
+5. **Seeder**: [ZipCodeSeeder.php](https://github.com/exequieldev/reto-tecnico-api/blob/main/database/seeders/ZipCodeSeeder.php)
 
 Para realizar la carga de la base de datos, se creó un archivo seeder, que contiene  todo los datos descargados de la fuente proporcionada.
-```php
-ZipCodeSeeder.php
-```
 
-6. **Controlador**  ApiZipCode/ZipCodeController.php
+
+6. **Controlador**  [ApiZipCode/ZipCodeController.php](https://github.com/exequieldev/reto-tecnico-api/blob/main/app/Http/Controllers/ApiZipCode/ZipCodeController.php)
 
 Se creó un controlador y se almaceno en un fichero separada, en este archivo se realiza  la funcionalidad para  la búsqueda de los datos, y su representación.
 ```php
@@ -216,7 +214,7 @@ class ZipCodeController extends Controller
 
 }
 ```
-7. **Ruta Api**
+7. **Ruta Api**: [zip-codes/{zip_code}](https://github.com/exequieldev/reto-tecnico-api/blob/main/routes/api.php)
 
 Para finalizar se creó una ruta api, con la sintaxis requerida y su respectivo controlador.
 
